@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik+Doodle+Shadow&display=swap');
+.values {
+    color:blue
+}
+@keyframes anime {
+    0%,100%{
+        background-color:red;
+        top:0px;
+        left:0px;
+    }
+    25%{
+        left:200px;
+        top:0px;
+        background-color:yellow;
+    }
+    50%
+    {
+        left: 200px;
+        top:200px;
+        border-radius:80%;
+        background-color: pink;
+    }
+    75%
+    {
+        left:0px;
+        top:200px;
+        background-color: green;
+    }
+}
+/* .container p{
+    background-color: red;
+    padding: 3px;
+    margin: 3px;
+    border: 3px;
+    width: 25%;
+    height:25%;
+    transition: all 2s ease 20ms;
+    animation-name:anime;
+} */
+.container p{
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    /* animation-name: anime ;
+    animation-duration:1s;
+    animation-timing-function:ease ;
+    animation-direction:alternate-reverse;
+    animation-iteration-count:infinite; */
+    animation:anime 1s ease-out 1s infinite backwards alternate-reverse;
+}
+/* p:hover{
+    height: 50%;
+    width: 50%;
+    border-radius:50%;;
+} */
+html{
+    background-color:lightgrey;
+    /* position: relative; */
+}
+.parent h1{
+    /* text-align: center; */
+    color: rgb(21, 21, 1);
+    font-family: Rubik Doodle Shadow ,serif;
+    font-optical-sizing: 100px;
+    font-size:34px;
+    padding:20px;
+    border:5px;
+    background-color:rgb(79, 187, 223);
+    margin:5px;
+    border-radius:5px;
+}
+h1::before{
+    content:"> ";
+}
+h1::after{
+    content:" <";
+    /* content:url(//unsplash.it/32/32); */
+}
+.child1 p{
+    padding:10px;
+    margin:3px;
+    background-color:#e26e6e;
+    position:sticky;
+    left:30px;
+    top:30px;
+}
+.child2 p{
+    padding: 10px;
+    background-color: rgb(230, 57, 57);
+    margin:3px;
+}
+/* @font-face {
+    font-family: ;
+    src: url();
+} */

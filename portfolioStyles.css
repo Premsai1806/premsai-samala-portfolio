@@ -311,3 +311,48 @@ input[type=submit]:hover{
         margin-left:0px;
     }
 }
+.skills-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #222;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.skill-card i {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
